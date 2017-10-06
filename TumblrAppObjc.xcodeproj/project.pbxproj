@@ -39,6 +39,8 @@
 		CEEBFB761F87BC010040B2EB /* TumblrAppObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrAppObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBFB7A1F87BC010040B2EB /* TumblrAppObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TumblrAppObjcTests.m; sourceTree = "<group>"; };
 		CEEBFB7C1F87BC010040B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEBFB871F87C2DB0040B2EB /* XMLDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		CEEBFB881F87C2DB0040B2EB /* XMLDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		E5DFB59936EE0CB46C259977 /* libPods-TumblrAppObjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TumblrAppObjc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5164EE1C2CC165CAC19151B /* Pods-TumblrAppObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrAppObjc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrAppObjc/Pods-TumblrAppObjc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEBFB601F87BC010040B2EB /* TumblrAppObjc */,
+				CEEBFB861F87C2C30040B2EB /* XMLDictionary */,
 				CEEBFB791F87BC010040B2EB /* TumblrAppObjcTests */,
 				CEEBFB5F1F87BC010040B2EB /* Products */,
 				F56445E21F0800B4EED01775 /* Pods */,
@@ -119,6 +122,15 @@
 				CEEBFB701F87BC010040B2EB /* main.m */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CEEBFB861F87C2C30040B2EB /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBFB881F87C2DB0040B2EB /* XMLDictionary.h */,
+				CEEBFB871F87C2DB0040B2EB /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
 		F56445E21F0800B4EED01775 /* Pods */ = {
