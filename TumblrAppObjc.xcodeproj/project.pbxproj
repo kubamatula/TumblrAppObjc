@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEEBFB631F87BC010040B2EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBFB621F87BC010040B2EB /* AppDelegate.m */; };
-		CEEBFB661F87BC010040B2EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBFB651F87BC010040B2EB /* ViewController.m */; };
-		CEEBFB691F87BC010040B2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEBFB671F87BC010040B2EB /* Main.storyboard */; };
 		CEEBFB6B1F87BC010040B2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEBFB6A1F87BC010040B2EB /* Assets.xcassets */; };
-		CEEBFB6E1F87BC010040B2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEBFB6C1F87BC010040B2EB /* LaunchScreen.storyboard */; };
 		CEEBFB711F87BC010040B2EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBFB701F87BC010040B2EB /* main.m */; };
 		CEEBFB7B1F87BC010040B2EB /* TumblrAppObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBFB7A1F87BC010040B2EB /* TumblrAppObjcTests.m */; };
 		DCA6C1AE9679828ED3B6C14F /* libPods-TumblrAppObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DFB59936EE0CB46C259977 /* libPods-TumblrAppObjc.a */; };
@@ -36,11 +33,7 @@
 		CEEBFB5E1F87BC010040B2EB /* TumblrAppObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrAppObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBFB611F87BC010040B2EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEEBFB621F87BC010040B2EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEEBFB641F87BC010040B2EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEEBFB651F87BC010040B2EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CEEBFB681F87BC010040B2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEEBFB6A1F87BC010040B2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEEBFB6D1F87BC010040B2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEEBFB6F1F87BC010040B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEBFB701F87BC010040B2EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEBFB761F87BC010040B2EB /* TumblrAppObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrAppObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,13 +97,7 @@
 			children = (
 				CEEBFB611F87BC010040B2EB /* AppDelegate.h */,
 				CEEBFB621F87BC010040B2EB /* AppDelegate.m */,
-				CEEBFB641F87BC010040B2EB /* ViewController.h */,
-				CEEBFB651F87BC010040B2EB /* ViewController.m */,
-				CEEBFB671F87BC010040B2EB /* Main.storyboard */,
-				CEEBFB6A1F87BC010040B2EB /* Assets.xcassets */,
-				CEEBFB6C1F87BC010040B2EB /* LaunchScreen.storyboard */,
-				CEEBFB6F1F87BC010040B2EB /* Info.plist */,
-				CEEBFB701F87BC010040B2EB /* main.m */,
+				CEEBFB851F87C1780040B2EB /* SupportingFiles */,
 			);
 			path = TumblrAppObjc;
 			sourceTree = "<group>";
@@ -122,6 +109,16 @@
 				CEEBFB7C1F87BC010040B2EB /* Info.plist */,
 			);
 			path = TumblrAppObjcTests;
+			sourceTree = "<group>";
+		};
+		CEEBFB851F87C1780040B2EB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBFB6A1F87BC010040B2EB /* Assets.xcassets */,
+				CEEBFB6F1F87BC010040B2EB /* Info.plist */,
+				CEEBFB701F87BC010040B2EB /* main.m */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		F56445E21F0800B4EED01775 /* Pods */ = {
@@ -223,9 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEBFB6E1F87BC010040B2EB /* LaunchScreen.storyboard in Resources */,
 				CEEBFB6B1F87BC010040B2EB /* Assets.xcassets in Resources */,
-				CEEBFB691F87BC010040B2EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEBFB661F87BC010040B2EB /* ViewController.m in Sources */,
 				CEEBFB711F87BC010040B2EB /* main.m in Sources */,
 				CEEBFB631F87BC010040B2EB /* AppDelegate.m in Sources */,
 			);
@@ -365,25 +359,6 @@
 			targetProxy = CEEBFB771F87BC010040B2EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CEEBFB671F87BC010040B2EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEEBFB681F87BC010040B2EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CEEBFB6C1F87BC010040B2EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEEBFB6D1F87BC010040B2EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CEEBFB7D1F87BC010040B2EB /* Debug */ = {
@@ -497,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5BCJV46N9;
-				INFOPLIST_FILE = TumblrAppObjc/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TumblrAppObjc/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jakubmatula.TumblrAppObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5BCJV46N9;
-				INFOPLIST_FILE = TumblrAppObjc/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TumblrAppObjc/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jakubmatula.TumblrAppObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
