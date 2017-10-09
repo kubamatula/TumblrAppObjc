@@ -22,6 +22,7 @@
 
 #import "TumblrAPIClient.h"
 #import "XMLDictionary.h"
+#import "Post.h"
 
 static NSString * const baseURLFormat = @"http://%@.tumblr.com/api/read/json";
 typedef NSDictionary<NSString *, NSString *> * parameters;
@@ -57,26 +58,22 @@ typedef NSDictionary<NSString *, NSString *> * parameters;
     return request;
 }
 
-- (void)fetchPostsForUser: (NSString *)username withBlock:(void (^)(NSArray *posts, NSError *error))block {
-    NSURLRequest *postsRequest = [self postsRequestForUser: username withParameters: @{@"debug": @"1"}];
+- (void)fetchPostsForUser: (NSString *)username offset: (NSInteger) offset withBlock:(void (^)(NSArray<Post *> *posts, NSError *error))block {
+    NSURLRequest *postsRequest = [self postsRequestForUser: username withParameters: @{@"debug": @"1", @"start": [NSString stringWithFormat: @"%ld", (long)offset]}];
     NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:postsRequest completionHandler: ^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
-            NSLog(@"Error: %@", error);
+            block(@[], error);
         } else {
-            NSLog(@"%@ %@", response, responseObject);
+            NSLog(@"Request succesful");
+            NSArray *postsFromResponse = [responseObject valueForKeyPath:@"posts"];
+            NSArray<Post *> *posts = [Post postsWith: postsFromResponse];
+            block(posts, error);
         }
     }];
     [dataTask resume];
 
 
 
-}
-
-- (void)go {
-    NSLog(@"went");
-    [self fetchPostsForUser: @"kubusma" withBlock:^(NSArray *posts, NSError *error) {
-        NSLog(posts);
-    }];
 }
 
 @end

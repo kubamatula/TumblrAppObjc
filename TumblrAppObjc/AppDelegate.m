@@ -7,17 +7,23 @@
 //
 
 #import "AppDelegate.h"
-#import "TumblrAPIClient.h"
+#import "PostsViewController.h"
+#import "Chameleon.h"
 
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [TumblrAPIClient.sharedClient go];
+    PostsViewController *postsVC = [[PostsViewController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController: postsVC];
+    self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    [Chameleon setGlobalThemeUsingPrimaryColor: [UIColor flatRedColor] withContentStyle: UIContentStyleContrast];
     return YES;
 }
 @end

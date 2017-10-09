@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CE100CBE1F882B3D001C2656 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CE100CBD1F882B3D001C2656 /* User.m */; };
+		CE5072BB1F8A849900B34987 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5072BA1F8A849900B34987 /* PostTableViewCell.m */; };
+		CE5072BE1F8A92DB00B34987 /* TextPostDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5072BD1F8A92DB00B34987 /* TextPostDetailViewController.m */; };
+		CE5072C21F8A92F500B34987 /* PhotoPostDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5072C11F8A92F500B34987 /* PhotoPostDetailViewController.m */; };
+		CE5072C51F8AD36400B34987 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5072C41F8AD36400B34987 /* PhotoTableViewCell.m */; };
+		CE9734501F899FE40050EE9C /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97344F1F899FE40050EE9C /* PostsViewController.m */; };
+		CE9734541F89A45D0050EE9C /* PostsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9734531F89A45D0050EE9C /* PostsDataSource.m */; };
 		CEEBFB631F87BC010040B2EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBFB621F87BC010040B2EB /* AppDelegate.m */; };
 		CEEBFB6B1F87BC010040B2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEBFB6A1F87BC010040B2EB /* Assets.xcassets */; };
 		CEEBFB711F87BC010040B2EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBFB701F87BC010040B2EB /* main.m */; };
@@ -36,6 +42,18 @@
 		B435302FA05B3F7FDF8A04D2 /* Pods-TumblrAppObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrAppObjc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrAppObjc/Pods-TumblrAppObjc.debug.xcconfig"; sourceTree = "<group>"; };
 		CE100CBC1F882B3D001C2656 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		CE100CBD1F882B3D001C2656 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CE5072B91F8A849900B34987 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		CE5072BA1F8A849900B34987 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		CE5072BC1F8A92DB00B34987 /* TextPostDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextPostDetailViewController.h; sourceTree = "<group>"; };
+		CE5072BD1F8A92DB00B34987 /* TextPostDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextPostDetailViewController.m; sourceTree = "<group>"; };
+		CE5072C01F8A92F500B34987 /* PhotoPostDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoPostDetailViewController.h; sourceTree = "<group>"; };
+		CE5072C11F8A92F500B34987 /* PhotoPostDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoPostDetailViewController.m; sourceTree = "<group>"; };
+		CE5072C31F8AD36400B34987 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		CE5072C41F8AD36400B34987 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
+		CE97344E1F899FE40050EE9C /* PostsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
+		CE97344F1F899FE40050EE9C /* PostsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
+		CE9734521F89A45D0050EE9C /* PostsDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsDataSource.h; sourceTree = "<group>"; };
+		CE9734531F89A45D0050EE9C /* PostsDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsDataSource.m; sourceTree = "<group>"; };
 		CEEBFB5E1F87BC010040B2EB /* TumblrAppObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrAppObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBFB611F87BC010040B2EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEEBFB621F87BC010040B2EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +102,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE5072B71F8A846C00B34987 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5072B81F8A847200B34987 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5072B81F8A847200B34987 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE5072B91F8A849900B34987 /* PostTableViewCell.h */,
+				CE5072BA1F8A849900B34987 /* PostTableViewCell.m */,
+				CE5072C31F8AD36400B34987 /* PhotoTableViewCell.h */,
+				CE5072C41F8AD36400B34987 /* PhotoTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE97344D1F899F8C0050EE9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE97344E1F899FE40050EE9C /* PostsViewController.h */,
+				CE97344F1F899FE40050EE9C /* PostsViewController.m */,
+				CE5072BC1F8A92DB00B34987 /* TextPostDetailViewController.h */,
+				CE5072BD1F8A92DB00B34987 /* TextPostDetailViewController.m */,
+				CE5072C01F8A92F500B34987 /* PhotoPostDetailViewController.h */,
+				CE5072C11F8A92F500B34987 /* PhotoPostDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE9734511F89A4250050EE9C /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				CE9734521F89A45D0050EE9C /* PostsDataSource.h */,
+				CE9734531F89A45D0050EE9C /* PostsDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		CEEBFB551F87BC010040B2EB = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +167,9 @@
 		CEEBFB601F87BC010040B2EB /* TumblrAppObjc */ = {
 			isa = PBXGroup;
 			children = (
+				CE5072B71F8A846C00B34987 /* View */,
+				CE9734511F89A4250050EE9C /* DataSources */,
+				CE97344D1F899F8C0050EE9C /* ViewControllers */,
 				CEEBFB931F8807A20040B2EB /* Model */,
 				CEEBFB891F87C32F0040B2EB /* TumblrApi */,
 				CEEBFB611F87BC010040B2EB /* AppDelegate.h */,
@@ -381,9 +443,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5072BE1F8A92DB00B34987 /* TextPostDetailViewController.m in Sources */,
+				CE9734541F89A45D0050EE9C /* PostsDataSource.m in Sources */,
+				CE5072C21F8A92F500B34987 /* PhotoPostDetailViewController.m in Sources */,
+				CE5072BB1F8A849900B34987 /* PostTableViewCell.m in Sources */,
 				CEEBFB961F8807B00040B2EB /* Post.m in Sources */,
+				CE9734501F899FE40050EE9C /* PostsViewController.m in Sources */,
 				CEEBFB711F87BC010040B2EB /* main.m in Sources */,
 				CE100CBE1F882B3D001C2656 /* User.m in Sources */,
+				CE5072C51F8AD36400B34987 /* PhotoTableViewCell.m in Sources */,
 				CEEBFB8D1F87D5420040B2EB /* XMLDictionary.m in Sources */,
 				CEEBFB8C1F87CA620040B2EB /* TumblrAPIClient.m in Sources */,
 				CEEBFB631F87BC010040B2EB /* AppDelegate.m in Sources */,
@@ -521,6 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5BCJV46N9;
 				INFOPLIST_FILE = "$(SRCROOT)/TumblrAppObjc/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jakubmatula.TumblrAppObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -536,6 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5BCJV46N9;
 				INFOPLIST_FILE = "$(SRCROOT)/TumblrAppObjc/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jakubmatula.TumblrAppObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";

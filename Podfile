@@ -7,7 +7,9 @@ target 'TumblrAppObjc' do
 
   # Pods for TumblrAppObjc
 
+  pod 'ChameleonFramework'
   pod 'AFNetworking', '~> 3.0'
+  pod 'Masonry'
 
   target 'TumblrAppObjcTests' do
     inherit! :search_paths

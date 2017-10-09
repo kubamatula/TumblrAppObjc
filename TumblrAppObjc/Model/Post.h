@@ -9,14 +9,36 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 
+typedef enum : NSUInteger {
+    PostTypeText,
+    PostTypePhoto,
+    PostTypeOther
+} PostType;
+
 @interface Post : NSObject
 
-@property (strong, nonatomic) User* user;
-@property (nonatomic) int id;
-@property (strong, nonatomic) NSString* title;
-@property (strong, nonatomic) NSString* body;
-@property (strong, nonatomic) NSString* type;
-@property (strong, nonatomic) NSDate* date;
-@property (strong, nonatomic) NSArray<NSString *> *tags;
+@property (nonatomic) User* user;
+@property (nonatomic) NSInteger id;
+@property (nonatomic) NSString* slug;
+@property (nonatomic) PostType type;
+@property (nonatomic) NSDate* date;
+@property (nonatomic) NSArray<NSString *> *tags;
+
+-(instancetype)initWithAttributes:(NSDictionary *)attributes;
++(NSArray<Post *> *)postsWith:(NSArray *)postDictionaries;
+@end
+
+
+@interface TextPost : Post
+
+@property (nonatomic, strong) NSString* title;
+@property (nonatomic, strong) NSString* htmlBody;
+
+@end
+
+@interface PhotoPost : Post
+
+@property (nonatomic, strong) NSString* caption;
+@property (nonatomic, strong) NSArray<NSURL *> *photos;
 
 @end

@@ -22,9 +22,10 @@
 
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
+#import "Post.h"
 
 @interface TumblrAPIClient : AFHTTPSessionManager
 
 + (instancetype)sharedClient;
-- (void)go;
+- (void)fetchPostsForUser: (NSString *)username offset: (NSInteger) offset withBlock:(void (^)(NSArray<Post *> *posts, NSError *error))block;
 @end
