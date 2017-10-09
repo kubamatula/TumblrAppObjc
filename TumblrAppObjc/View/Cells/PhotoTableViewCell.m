@@ -21,16 +21,18 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     _photo = [[UIImageView alloc] init];
+    _photo.translatesAutoresizingMaskIntoConstraints = false;
     _photo.contentMode = UIViewContentModeScaleAspectFill;
-    [self addSubview: _photo];
+    [self.contentView addSubview: _photo];
     _spinner = [[UIActivityIndicatorView alloc] init];
     _spinner.hidesWhenStopped = true;
-    [self addSubview: _spinner];
+    _spinner.translatesAutoresizingMaskIntoConstraints = false;
+    [self.contentView addSubview: _spinner];
     [_spinner mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top).offset(10);
-        make.bottom.equalTo(self.mas_bottom).offset(-10);
-        make.centerX.equalTo(self.mas_centerX);
-        make.centerY.equalTo(self.mas_centerY);
+        make.top.equalTo(self.contentView.mas_top).offset(10);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-10);
+        make.centerX.equalTo(self.contentView.mas_centerX);
+        make.centerY.equalTo(self.contentView.mas_centerY);
     }];
     [_spinner startAnimating];
     [_spinner setActivityIndicatorViewStyle: UIActivityIndicatorViewStyleWhiteLarge];
@@ -43,11 +45,14 @@
     CGFloat heightToWidth = image.size.height/image.size.width;
     [_spinner stopAnimating];
     [_spinner mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.mas_centerX);
-        make.centerY.equalTo(self.mas_centerY);
+        make.centerX.equalTo(self.contentView.mas_centerX);
+        make.centerY.equalTo(self.contentView.mas_centerY);
     }];
     [_photo mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self);
+        make.left.equalTo(self.contentView.mas_left);
+        make.top.equalTo(self.contentView.mas_top);
+        make.right.equalTo(self.contentView.mas_right);
+        make.bottom.equalTo(self.contentView.mas_bottom);
         make.height.equalTo(_photo.mas_width).multipliedBy(heightToWidth);
     }];
     [self setNeedsLayout];
